@@ -1,0 +1,35 @@
+/* Faq.css */
+
+.faq-container {
+    /* padding:30px 0; */
+    background-color: #fafafa;
+  }
+  
+  .faq-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;  
+}
+  
+  .faq-accordion .accordion-button {
+    background-color: #d2a44f;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .faq-accordion .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .faq-accordion .accordion-body {
+    background-color: #f1f1f1;
+  }
+  
+  .faq-accordion .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #ffcf6a;
+  }
+  
