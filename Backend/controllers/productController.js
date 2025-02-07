@@ -5,7 +5,7 @@ import productModel from "../models/productModel.js"
 const addProduct = async (req, res) => {
     try {
 
-        const { name, description, price, category, subCategory, sizes, bestseller } = req.body
+        const { name, description, price, category, brand, type, seasons, pricerange, bestseller, rating, reviewsCount, inStock } = req.body; 
 
         const image1 = req.files.image1 && req.files.image1[0]
         const image2 = req.files.image2 && req.files.image2[0]
@@ -26,12 +26,18 @@ const addProduct = async (req, res) => {
             description,
             price: Number(price),
             category,
-            subCategory,
+            brand, // New field added
+            type, // New field added
+            seasons, // New field added
+            pricerange, // New field added
             bestseller: bestseller === "true" ? true : false,
-            sizes: JSON.parse(sizes),
-            image: imagesUrl,
-            date: Date.now()
-        }
+            image: imagesUrl, // Assuming this contains the URLs of images
+            date: Date.now(),
+            rating: Number(rating) || 0, // New field: Default to 0 if not provided
+            reviewsCount: Number(reviewsCount) || 0, // New field: Default to 0 if not provided
+            inStock: inStock === "true" ? true : false // New field added for availability
+        };
+        
 
         console.log(productData);
 
