@@ -1,0 +1,20 @@
+/* Product.css */
+.zoom-container {
+    overflow: hidden; /* Hide overflow to prevent image from spilling out */
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 390px;
+    margin: 8px;
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    cursor: zoom-in; /* Change cursor to indicate zoom */
+   
+  }
+  
+  .zoom-container:hover .zoom-image {
+    transform: scale(1.2); /* Zoom in by 1.5x on hover */
+   
+  }

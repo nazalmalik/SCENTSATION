@@ -1,0 +1,12 @@
+.product-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers single items */
+  gap: 20px; /* Consistent spacing */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

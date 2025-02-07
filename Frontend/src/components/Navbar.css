@@ -1,0 +1,143 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar-transparent {
+  background-color: #1D3243 !important;
+}
+
+.nav-links .nav-link {
+  color: #D2A44F !important;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+  
+}
+
+.nav-links .nav-link:hover {
+  color: #D2A44F;
+  text-decoration: underline;
+}
+
+.nav-links .nav-link.active-link {
+  color: #D2A44F !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+  color: #D2A44F;
+  font-size: 2rem;
+  font-family: 'The Little Mermaid';
+  letter-spacing: 3px;
+}
+
+/* Dropdown Customization */
+.dropdown-custom .dropdown-item {
+  color: #D2A44F !important;
+  font-weight: normal;
+}
+
+.dropdown-custom .dropdown-item:hover {
+  color: #D2A44F;
+  text-decoration: underline;
+  background-color:#1D3243 ;
+}
+
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  top: 33px;
+  right: 40px;
+  color: #D2A44F;
+}
+
+.floating-icons button {
+  color: #D2A44F; /* Green color for icons */
+}
+
+.floating-icons .badge {
+  background-color: #bebebd;
+   /* Orange-red for cart badge */
+}
+
+.floating-icons img {
+  width: 25px;
+  height: 25px;
+}
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border-color: #D2A44F !important;
+
+}
+/* Custom dropdown styling */
+.navbar .dropdown-menu {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #ddd; /* Border for dropdown */
+}
+
+.navbar .dropdown-item {
+  color: #333; /* Text color */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #1D3243; /* Hover background */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  /* Navbar layout for mobile */
+
+
+  .navbar-transparent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1;
+    text-align: left;
+    font-size: 1.4rem;
+
+  }
+
+  .floating-icons {
+    flex: none;
+    /* display: flex; */
+     gap: 1rem;
+     right: 80px;
+  }
+
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background-color: #D2A44F; /* Set background color */
+    color: #f6ebe2; /* Set icon color */
+    font-size: 2rem; /* Increase icon size */
+  }
+  
+  .navbar-toggler-icon {
+    position: relative;
+    width: 35px; /* Adjust width of the hamburger icon */
+    height: 3px; /* Adjust height */
+    background-color: #f6ebe2; /* Set icon color */
+    border-radius: 1px; /* Rounded edges */
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  
+  
+  /* Change hamburger menu icon on hover */
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #f5f4f3; /* Slightly darker color on hover */
+  }
+  
+  /* Hover effect for top and bottom lines */
+  .navbar-toggler:hover .navbar-toggler-icon::before,
+  .navbar-toggler:hover .navbar-toggler-icon::after {
+    background-color: #f5f4f3; /* Change color on hover */
+  }
+  
+
+}
